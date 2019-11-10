@@ -15,7 +15,7 @@ def start
       if input_token == "X"
         game = Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Computer.new("O"), board = Board.new).play
       elsif input_token == "O"
-        game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Human.new("X"), board = Board.new).play
+        game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Human.new("O"), board = Board.new).play
       else
         puts "Incorrect token entered. Please try again. Restarting game."
         start
